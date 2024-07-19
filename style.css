@@ -63,9 +63,15 @@ h1{
     padding-bottom: 50px;
 }
 .wrapper {
-    display: grid;
+    display:grid;
     grid-template-columns:auto auto auto;
     grid-gap: 10px;
+} 
+.wrappertab {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 10px
 } 
 .bild1{
     grid-column-start: 1;
@@ -140,19 +146,27 @@ font-family: Arvo;
 }
 .formbox2{
     grid-column: 4/6;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 .formbox3{
-    grid-column: 3/4;
-    grid-row: ;
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
 .formbox4{
-    grid-column: ;
-    grid-row: ;
+    grid-column: 4/6;
+    grid-row: 3/4;
 }
 .formbox5{
-    grid-column: ;
-    grid-row: ;
+    grid-column: 2/6;
+    grid-row: 4/5;
+}
+.formbox6 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.formbox7 {
+    grid-column: 4/6;
+    grid-row: 5/6;
 }
 
 .boxformular {
@@ -160,4 +174,42 @@ font-family: Arvo;
     overflow-x: hidden;
     background-color: #FFF6E1;
     color: #D04E05;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapperformular{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 80px 300px 300px 300px 300px 80px;
+    background-color: #e0dad3;
+    text-align: center;
+    color: #444; 
+    justify-content: center; 
+}
+.adresse{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+.links_impressum{
+    text-decoration: none;
+    color: #D04E05;
+    transition: all 0.1s linear;
+}
+
+.links_impressum2{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.icon_impressum{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    margin-top: 35px;
 }
